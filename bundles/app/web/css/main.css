@@ -1,0 +1,282 @@
+/* Fonts are defined herein */
+/**
+ * ensures that vertically aligned children don't appear blurry
+ */
+/**
+ * vertically aligns an element
+ */
+/*
+    Keyframes
+    Credits: https://gist.github.com/Integralist/3931680
+*/
+/*
+    Transform
+    Credits: https://codepen.io/sawmac/pen/qGudy/
+*/
+/*
+    Style placeholder
+    Credits: http://stackoverflow.com/questions/17181849/placeholder-mixin-scss-css
+*/
+/*@mixin placeholder($color, $position) {
+    &:-webkit-input-placeholder: $color;
+    &:-moz-placeholder: $color;
+    &:-ms-input-placeholder: $color;
+}*/
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background: #f7f7f7; }
+
+* {
+  box-sizing: border-box;
+  margin: 0; }
+
+body {
+  font-family: "Roboto Condensed", Helvetica, sans-serif; }
+
+h1, h2, p {
+  text-align: center; }
+
+h1 {
+  color: #3f444a;
+  font-size: 60px; }
+
+h2 {
+  color: #5c6873;
+  font-weight: 300;
+  font-size: 32px; }
+
+a {
+  color: #3f444a; }
+
+a:hover {
+  color: #32c5d2; }
+
+header {
+  position: absolute;
+  z-index: 2;
+  width: 100%; }
+
+._top {
+  margin-top: 4em; }
+
+.landing {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: #141e28; }
+
+.overlay {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #111;
+  opacity: 0.7;
+  left: 0;
+  right: 0; }
+
+section {
+  position: relative;
+  width: 100%;
+  margin: 0; }
+
+.left-circle {
+  padding: 15px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background: white;
+  opacity: .4;
+  transition: all ease 0.5s;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  z-index: 1; }
+
+.right-circle {
+  padding: 30px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background: white;
+  opacity: .4;
+  transition: all ease 0.5s;
+  position: absolute;
+  right: -30px;
+  bottom: -30px;
+  z-index: 1; }
+
+.big-circle {
+  width: 500px;
+  margin: auto;
+  height: 500px;
+  padding-top: 5em;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #fff; }
+
+.inner-section {
+  width: 60%;
+  margin: 15% auto 0;
+  height: auto;
+  right: 0;
+  left: 0;
+  border-radius: 5px;
+  border: 1px solid #111;
+  padding: 1.6em 3em;
+  background: rgba(10, 10, 10, 0.8);
+  position: absolute; }
+.inner-section article {
+  text-align: center;
+  line-height: 25px;
+  font-family: 'Raleway', sans-serif;
+  color: white; }
+.inner-section .login-signup {
+  text-align: center;
+  margin-top: 20px;
+  padding: 15px; }
+.inner-section .login-signup .btn {
+  padding: .9em 3em;
+  margin: 3px;
+  display: inline-block;
+  outline: none;
+  font-family: 'Titillium Web', sans-serif;
+  border: none;
+  border-radius: 50px;
+  box-shadow: #111111 2px 1px 3px;
+  position: relative;
+  transition: 250ms ease-in-out; }
+.inner-section .login-signup .btn:hover {
+  background: white; }
+.inner-section .login-signup .btn-login {
+  background: #279AF1;
+  color: white; }
+.inner-section .login-signup .btn-login:hover {
+  color: #146496; }
+.inner-section .login-signup .btn-up {
+  background: #141e1e;
+  color: white; }
+.inner-section .login-signup .btn-up:hover {
+  color: #141e1e; }
+
+.change {
+  float: right; }
+
+.wrapper {
+  width: 50%;
+  height: 500px;
+  margin: 100px auto;
+  background: white; }
+
+.pro-picture {
+  height: 250px;
+  width: 250px;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  left: 40%;
+  top: -10px;
+  margin: auto;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.wrapper h2 {
+  text-align: center;
+  padding-top: 150px; }
+
+.information {
+  height: 200px;
+  width: 80%;
+  background: #657b99;
+  margin: auto; }
+
+.pass {
+  /*display: none;*/ }
+
+.wall-container {
+  height: 100%;
+  width: 100%;
+  margin-top: 4rem;
+  position: absolute;
+  background: #140a28; }
+.wall-container h3 {
+  font-family: 'Poiret One', cursive;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 0;
+  letter-spacing: 2px;
+  color: #146496; }
+
+.inner-container {
+  position: relative;
+  width: 33%;
+  margin: 7em auto 0;
+  height: auto;
+  border-radius: 5px;
+  background: #f7f7f7; }
+.inner-container .col-1-1 {
+  margin: 2px auto 0;
+  height: auto; }
+@media (max-width: 768px) {
+  .inner-container .col-1-1 {
+    width: 92%;
+    margin: 7px; } }
+.inner-container .content {
+  padding: 1.3em 1.5em; }
+.inner-container .top-dash {
+  border-top: 7px solid #146496;
+  width: auto;
+  padding-bottom: 5px; }
+.inner-container .login-field {
+  padding: 10px; }
+.inner-container .login-field .form-group {
+  padding: 10px; }
+.inner-container .login-field .label-container {
+  display: block;
+  font-size: 15px;
+  padding-bottom: 5px;
+  color: #140a28; }
+.inner-container .login-field .form-control {
+  min-height: 1px;
+  outline: none;
+  display: inline-block;
+  padding: 1.2em 2em;
+  border: 1px solid rgba(20, 10, 40, 0.4);
+  width: 100%;
+  position: relative;
+  background: none;
+  box-shadow: none; }
+.inner-container .login-field .form-control:focus, .inner-container .login-field .form-control :active {
+  background: none; }
+.inner-container .login-field .btn {
+  padding: .9em 1.5em;
+  outline: none;
+  letter-spacing: 2px;
+  border-radius: 50px;
+  box-shadow: none; }
+.inner-container .login-field .btn-submit {
+  font-family: 'Montserrat', sans-serif;
+  background: #140a28;
+  color: white;
+  font-size: 14px; }
+.inner-container .login-field .alert {
+  bottom: 0;
+  position: absolute;
+  padding: .6em 2em;
+  display: inline-block;
+  box-shadow: none;
+  min-height: 1px;
+  margin-bottom: 2px;
+  clear: both;
+  width: 48%;
+  color: #f7f7f7;
+  border-radius: 5px; }
+.inner-container .login-field .danger {
+  background: #761400; }
+.inner-container .login-field .success {
+  background: #32be0a; }
+
+/*# sourceMappingURL=main.css.map */

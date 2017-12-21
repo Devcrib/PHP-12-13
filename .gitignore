@@ -1,0 +1,6 @@
+composer.phar
+vendor/
+composer.lock
+web/bundles
+.idea/
+/bundles/app/.sass-cache/
